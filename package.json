@@ -1,16 +1,14 @@
 {
-  "name": "electron-quick-start",
-  "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "name": "todo-app-name-here",
+  "version": "0.0.1",
+  "description": "This is a minimal template for an Electron app built with React and TypeScript.",
   "author": "ashley@codecapers.com.au",
-  "main": "build/main.js",
+  "main": "ts-build/main.js",
   "scripts": {
-    "start": "tsc && start tsc --watch && cp src/index.html build && electron .",
-    "build": "tsc && cp src/index.html build && electron-builder",
-    "clean": "rm -rf build/*",
-    "clean-build": "rm -rf build/* && tsc",
-    "build:watch": "tsc --watch",
-    "clean-build:watch": "rm -rf build/* && tsc --watch",
+    "start": "tsc && start tsc --watch && cp src/index.html ts-build && electron .",
+    "build": "tsc && cp src/index.html ts-build && electron-builder",
+    "clean": "rm -rf dist/* && rm -rf ts-build/*",
+    "clean-build": "rm -rf dist/* && rm -rf ts-build/* && tsc && cp src/index.html ts-build && electron-builder",
     "test": "nyc mocha --opts ./src/test/mocha.opts",
     "test:watch": "nyc mocha --watch --watch-extensions ts --opts ./src/test/mocha.opts"
   },
@@ -37,7 +35,8 @@
     "exclude": [
       "**/*.d.ts",
       "src/test/**/*",
-      "build/**/*",
+      "ts-build/**/*",
+      "dist/**/*",
       "docs/**/*",
       "coverage/**/*"
     ],
