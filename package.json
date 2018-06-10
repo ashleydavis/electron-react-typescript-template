@@ -1,0 +1,54 @@
+{
+  "name": "electron-quick-start",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "author": "ashley@codecapers.com.au",
+  "main": "build/main.js",
+  "scripts": {
+    "start": "tsc && start tsc --watch && cp src/index.html build && electron .",
+    "build": "tsc && cp src/index.html build && electron-builder",
+    "clean": "rm -rf build/*",
+    "clean-build": "rm -rf build/* && tsc",
+    "build:watch": "tsc --watch",
+    "clean-build:watch": "rm -rf build/* && tsc --watch",
+    "test": "nyc mocha --opts ./src/test/mocha.opts",
+    "test:watch": "nyc mocha --watch --watch-extensions ts --opts ./src/test/mocha.opts"
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "devDependencies": {
+    "@types/chai": "4.0.4",
+    "@types/mocha": "2.2.43",
+    "@types/node": "8.0.28",
+    "@types/react": "^16.3.17",
+    "@types/react-dom": "^16.0.6",
+    "chai": "4.1.2",
+    "electron": "^2.0.0",
+    "electron-builder": "^20.15.1",
+    "mocha": "3.5.3",
+    "nyc": "11.8.0",
+    "source-map-support": "0.5.6",
+    "ts-node": "3.3.0",
+    "typescript": "2.5.2"
+  },
+  "nyc": {
+    "extension": [
+      ".ts"
+    ],
+    "exclude": [
+      "**/*.d.ts",
+      "src/test/**/*",
+      "build/**/*",
+      "docs/**/*",
+      "coverage/**/*"
+    ],
+    "reporter": [
+      "text-summary"
+    ],
+    "all": true
+  },
+  "dependencies": {
+    "electron-reload": "^1.2.2",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0"
+  }
+}
