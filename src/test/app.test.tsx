@@ -13,7 +13,7 @@ describe('app', () => {
     it('check title', ()  => {
 
         const app = mount(<App />);
-        expect(app.find("h1").text()).to.eql("Hello React");
+        expect(app.find("h1").text()).to.eql("Hello React!!");
     });
 
 });
