@@ -9,11 +9,6 @@ document.write("TypeScript baby!");
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { App } from './app';
-import { Container } from 'inversify';
-import { Env, IEnv } from './env';
-
-const ioc = new Container();
-ioc.bind<IEnv>("IEnv").to(Env);
 
 ReactDOM.render(
     <App />,

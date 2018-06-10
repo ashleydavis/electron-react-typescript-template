@@ -1,7 +1,7 @@
 import { assert, expect } from 'chai';
 import 'mocha';
 import * as React from 'react';
-import { Title } from '../title';
+import { Title } from '../ui/title';
 import { mount, configure } from 'enzyme';
 import { TestBed } from 'react.di';
 

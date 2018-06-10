@@ -1,7 +1,7 @@
 
 import * as React from 'react';
-import { Header } from './header';
-import { Env, IEnv } from './env';
+import { Header } from './ui/header';
+import { Env, IEnv } from './services/env';
 import { Module } from 'react.di';
 
 @Module({
