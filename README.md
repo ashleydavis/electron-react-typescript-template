@@ -7,6 +7,7 @@ Minimal template for app build on Electron, React and TypeScript.
     - Mocha integration for testing.
     - Live reload for dev and testing.
     - Code coverage.
+    - Dependency injection for react components.
 
 # Install deps
 
