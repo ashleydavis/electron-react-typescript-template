@@ -1,5 +1,6 @@
 --compilers ts-node/register
 --require source-map-support/register
+--require jsdom-global/register
 --full-trace
 --recursive
-src/test/**/*.test.ts
+src/test/**/*.test.*
