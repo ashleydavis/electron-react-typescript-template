@@ -10,10 +10,12 @@ configure({ adapter: new Adapter() });
 
 describe('app', () => {
 
-    it('should be true', ()  => {
+    it('check title', ()  => {
 
         const app = mount(<App />);
         expect(app.find("h1").text()).to.eql("Hello React");
     });
 
 });
+
+

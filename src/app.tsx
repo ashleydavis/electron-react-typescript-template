@@ -1,12 +1,13 @@
 
 import * as React from 'react';
+import { Title } from './title';
 
 export class App extends React.Component<{}> {
 
     msg: string = "Hello React";
     
     render () {
-        return <h1>{this.msg}</h1>;
+        return <Title title={this.msg} />;
     }
 }
 
