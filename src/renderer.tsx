@@ -8,8 +8,9 @@ document.write("TypeScript baby!");
 
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
+import { App } from './app';
 
 ReactDOM.render(
-  <h1>Hello, world!</h1>,
-  document.getElementById('root')
+    <App />,
+    document.getElementById('root')
 );
