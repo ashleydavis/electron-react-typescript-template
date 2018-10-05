@@ -2,6 +2,11 @@
 
 Minimal template for app build on Electron, React and TypeScript.
 
+# TODO
+
+- TestCafe doesn't play nicely with Mocha. I've had to remove the TypeScript types for Mocha.
+- It might be a good idea to replace Mocha with Jest and see if it plays better with TestCafe.
+
 # Features
 
     - Mocha integration for testing.
@@ -22,10 +27,13 @@ Minimal template for app build on Electron, React and TypeScript.
     npm run test
     npm run test:watch
 
+# Run full building testing with TestCafe
+
+    npm run testcafe
+
 # Run for development
 
     npm start
-
 
 # Build the installer
 
