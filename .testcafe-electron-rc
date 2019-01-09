@@ -1,3 +1,4 @@
 {
-    "mainWindowUrl": "./ts-build/index.html"
+    "mainWindowUrl": "./ts-build/index.html",
+    "appPath": "./"
 }

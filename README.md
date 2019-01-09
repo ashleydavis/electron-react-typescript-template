@@ -27,7 +27,7 @@ Minimal template for app build on Electron, React and TypeScript.
     npm run test
     npm run test:watch
 
-# Run full building testing with TestCafe
+# Run full build testing with TestCafe
 
     npm run testcafe
 
