@@ -2,6 +2,9 @@
 
 Minimal template for app build on Electron, React and TypeScript.
 
+[Click here to support my work](https://www.codecapers.com.au/about#support-my-work)
+
+
 # TODO
 
 - TestCafe doesn't play nicely with Mocha. I've had to remove the TypeScript types for Mocha.
